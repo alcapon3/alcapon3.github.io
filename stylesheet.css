@@ -1,8 +1,7 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-	
-	
+
 body {
 	background-color: #053d57; 
 	margin: 0;
@@ -11,7 +10,7 @@ body {
 
 header {
 	background-color: #f1efe9;
-	top: 0px;
+	top: 0;
 	width: 100%;
 	height: 80px;
 	position: fixed;
@@ -23,20 +22,14 @@ a, ul {
   text-decoration: none;
 }
 
+
 .clear {
-	clear: left;
+  clear: left;
 }
 
 .logo {
 	float: left;
 	width: 100px;
-}
-
-.logo-text {
-	padding: 0px 5px;
-	font-weight: bold;
-	font-size: 25px;
-	float: left;
 }
 
 .header-right ul li {
@@ -55,110 +48,76 @@ a, ul {
 	color: rgba(40, 40, 40);
 	display: inline;
 	position: relative;
-	float: right;
+	float: left;
 	font-family: "Swis721 BlkCn BT";
 }
 
+.header-left .menu-icon {
+  color: black;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
 .container {
-  width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 
-/* Tambahkan CSS untuk top-wrapper */
 .top-wrapper {
-  padding-top: 180px;
-  padding-bottom: 100px;
+  padding: 180px 0 100px 0;
   color: black;
   background-image: url(img/top_en.jpg);
   background-size: cover;
-  /* Ubah nilai property text-align ke center */
   text-align: center;
 }
 
-/* Tambahkan CSS untuk tag <h1> didalam class top-wrapper */
+
 .top-wrapper h1 {
   font-size: 45px;
   letter-spacing: 5px;
   margin-bottom: 10px;
+  opacity: 0.7;
 }
 
-
-/* Tambahkan CSS untuk tag <p> didalam class top-wrapper */
-.top-wrapper p {
-  margin-bottom: 3px;
-}
 
 /* Tambahkan CSS untuk btn */
 .btn {
-  padding-top: 12px 24px;
+  padding: 12px 24px;
   color: white;
   display: inline-block;
   opacity: 0.8;
+  text-align: center;
   text-decoration: none;
   border-radius: 4px;
 }
 
-/* Tambahkan CSS untuk btn pada saat ditunjuk */
-.btn:hover {
-  opacity: 1;
-}
-
-/* Tambahkan CSS untuk signup */
-.signup {
-  background-color: #239b76;
-}
-
-/* Tambahkan CSS untuk facebook */
-.facebook {
-  background-color: #3b5998;
+/* Gantikan margin-right milik fa ke 5px */
+.fa {
   margin-right: 10px;
 }
 
-/* Tambahkan CSS untuk twitter */
-.twitter {
-  background-color: #55acee;
-}
-
-/* Tambahkan CSS untuk btn-wrapper */
-.btn-wrapper {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Tambahkan CSS untuk tag <p> didalam class btn-wrapper */
-.btn-wrapper p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* Gantikan margin-right milik fa ke 5px */
-.fa {
-  margin-right: 5px;
-}
-
 .lesson-wrapper {
-  height: 500px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 80px;
- /* background-color: #f7f7f7;*/
-  /* Ubah property text-align ke center */
   text-align: center;
 }
 
 /* Tambahkan CSS untuk heading */
 .heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   color: #5f5d60;
 }
 
 /* Tambahkan CSS untuk tag <h2> didalam heading */
 .heading h2 {
   font-weight: normal;
-  color: black;
 }
 
 /* Tambahkan CSS untuk lesson */
@@ -175,7 +134,7 @@ a, ul {
 /* Tambahkan CSS untuk tag <p> didalam lesson-icon */
 .lesson-icon p {
   position: absolute;
-  top: 90px;
+  top: 44%;
   width: 100%;
   color: white;
 }
@@ -200,14 +159,9 @@ a, ul {
 /* Tambahkan CSS untuk message */
 .message {
   background-color: #5dca88;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  /* Ubah property cursor ke pointer */
+  padding: 15px 40px;
   cursor: pointer;
-  /* Ubah property box-shadow */
-  box-shadow: 0px 7px #1a7940;
+  box-shadow: 0 7px #1a7940;
   
 }
 
@@ -218,36 +172,17 @@ a, ul {
   top: 7px;
 }
 
-/* tambahkan CSS untuk tag <h3> didalam heading */
-.heading h3 {
-  font-weight: normal;
-  text-shadow: 0px 3px 0px #b2a98f,
-  0px 14px 10px rgba(0,0,0,0.15),
-  0px 24px 2px rgba(0,0,0,0.1),
-  0px 34px 30px rgba(0,0,0,0.1);
-}
-
 
 footer {
 	background-color: #f1efe9;
-	height: 120px;
-	margin-top: 120px;
-	margin-bottom: 10px;
-	color: white;
-	padding : 40px;
+	color: black;
+	padding-top: 30px;
+  padding-bottom: 20px
 }
 
 .footer-logo img {
 	float: left;
 	width: 160px;
-	padding-top: 20px;
-}
-
-.footer-logo p {
-	float: left;
-	padding: 20px 10px;
-	font-weight: bold;
-	font-size: 25px;
 }
 
 
@@ -255,7 +190,12 @@ footer {
 	text-align: center;
 	padding-top: 120px;
 	line-height: 20px;
+  font-weight: bold;
 	text-decoration: blink;
+  text-shadow: 0px 3px 0px #b2a98f,
+  0px 14px 10px rgba(0,0,0,0.15),
+  0px 24px 2px rgba(0,0,0,0.1),
+  0px 34px 30px rgba(0,0,0,0.1);
 }
 
 .footer-list {
@@ -283,14 +223,3 @@ footer {
   75%  {background: url(img/a1.jpg);}
   100% {background: url(img/a4.jpg);}
 }
-
-.menu icon {
-	color: black;
-	float: right;
-	font-size: 25px;
-	padding: 21px 0;
-	display: none;
-}
-
-
-	
