@@ -123,7 +123,7 @@ a, ul {
 /* Tambahkan CSS untuk lesson */
 .lesson {
   float: left;
-  width: 25%;
+  width: 20%;
 }
 
 /* Tambahkan CSS untuk lesson-icon */
@@ -134,7 +134,7 @@ a, ul {
 /* Tambahkan CSS untuk tag <p> didalam lesson-icon */
 .lesson-icon p {
   position: absolute;
-  top: 44%;
+  top: 58%;
   width: 100%;
   color: white;
 }
@@ -185,6 +185,11 @@ footer {
 	width: 160px;
 }
 
+.lesson img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
 .footer-text {
 	text-align: center;
