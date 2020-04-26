@@ -84,6 +84,11 @@ a, ul {
   opacity: 0.7;
 }
 
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+  font-size: 24px;
+}
 
 /* Tambahkan CSS untuk btn */
 .btn {
@@ -136,7 +141,8 @@ a, ul {
   position: absolute;
   top: 58%;
   width: 100%;
-  color: white;
+  color: #FFD700;
+  font-weight: bold;
 }
 
 
@@ -189,6 +195,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  background: url(img/batik.png);
 }
 
 .footer-text {
